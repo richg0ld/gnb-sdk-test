@@ -1,0 +1,29 @@
+{
+  "name": "gnb-sdk-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development parcel build ./src/index.js --no-minify --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richg0ld/gnb-sdk-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richg0ld/gnb-sdk-test/issues"
+  },
+  "homepage": "https://github.com/richg0ld/gnb-sdk-test#readme",
+  "dependencies": {
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "parcel-bundler": "^1.12.3",
+    "react-hot-loader": "^4.8.0"
+  }
+}
