@@ -11,7 +11,7 @@
 				_$script.async=true;
 				_$script.src=_src;
 				_$firstScript=_document.getElementsByTagName(_tagName)[0];
-				_$firstScript.parentNode.insertBefore(_$script,_$firstScript)
+				_$firstScript.parentNode.insertBefore(_$script,_$firstScript);
 			}(
 				window,
 				document,
@@ -24,5 +24,14 @@
 <div id="app">
     어떤 프로젝트의 html 코드들
 </div>
+<script>
+	/**
+     * 아래처럼 비동기로 실행해야 gnb 내부 객체를 사용 할 수 있기 때문에 queue를 만들어줘야함..
+     */
+		setTimeout(() => {
+			console.log(3);
+			window.kjh.setTest(() => console.log('hahahahahahah'));
+    }, 1000)
+</script>
 </body>
 </html>
