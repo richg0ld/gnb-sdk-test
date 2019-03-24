@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+	    !function(_window,_document,_tagName,_src,n,t,s)
+	    {
+            if(_window.fbq)return;
+            n=_window.fbq=function(){
+	    		n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+            };
+            if(!_window._fbq) {
+				_window._fbq=n;
+				n.push=n;
+				n.loaded=!0;
+				n.version='2.0';
+            }
+		    n.queue=[];
+		    t=_document.createElement(_tagName);
+		    t.async=true;
+		    t.src=_src;
+		    s=_document.getElementsByTagName(_tagName)[0];
+		    s.parentNode.insertBefore(t,s)
+	    }(
+          window,
+          document,
+          'script',
+          'http://127.0.0.1:8080/dist/index.js'
+        );
+    </script>
 </head>
 <body>
-
+    <div id="app">
+        어떤 프로젝트의 html 코드들
+    </div>
 </body>
 </html>
